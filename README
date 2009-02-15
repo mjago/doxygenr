@@ -1,0 +1,17 @@
+Doxygen wrapper to enable Doxygen to be aware of __FILE__, and require minimal setup. 
+
+Important settings such as project_name and project_number are checked for prior to running doxygen.
+
+A fresh temporary doxyfile is created per run of Doxygen. This removes the need for several doxyfiles located 
+all over the place, and enables the use of __FILE__ == $0 etc.
+
+Default doxygen settings can be found in doxygen_settings.rb. Any of these settings can be overloaded via ruby.
+
+DoxygenSettings class is inherited by DoxygenR.
+
+Todo:
+ Consider making it easier to collate links for search documentation by providing re-running doxygen automatically
+ and adjusting relative tag file references.
+ 
+Usage...
+ todo
